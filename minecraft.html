@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" id="theme" type="text/css" href="./css/minecraft.css">
+</head>
+
+<body>
+    <div class="flex-container">
+        <div id="new_game">
+            <img class="flex-container" id="logo" src="images/logo.png" />
+            <p>
+                <b>Instructions:</b>
+                <br>
+                <br> 1. Collect resources by choosing a tool:
+                <br> &nbsp&nbsp Axe (for chopping trees), Pickaxe (for mining rocks), or Shovel (for digging-up dirt)
+                <br>
+                <br> 2. Build elements by choosing a resource and placing it on the board.
+                <br> &nbsp&nbsp Be sure to connect to established elements on the board.
+            </p>
+            <button class="button" id="play_game" onclick="Minecraft.start();">Play</button>
+        </div>
+        <div class="flex-container main">
+            <div class="flex-container game-container"></div>
+        </div>
+        <div class="flex-container side-bar">
+            <div class="flex-container tool-shed">
+                <div class="tool-box pickaxe"></div>
+                <div class="tool-box shovel"></div>
+                <div class="tool-box axe"></div>
+            </div>
+            <div class="flex-container resources-container">
+                <div class="resource-box ground"></div>
+                <div class="resource-box shrubbery"></div>
+                <div class="resource-box bark"></div>
+                <div class="resource-box stone"></div>
+                <div class="resource-box grass"></div>
+            </div>
+            <button class="button" id="reset" onclick="Minecraft.start();">Reset</button>
+            <button class="button" id="theme" onclick="Minecraft.switchTheme();">Theme</button>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/minecraft.js"> </script>
+</body>
+
+</html>

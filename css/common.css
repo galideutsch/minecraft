@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    background-image: url('../images/wallpaper2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'VT323', monospace;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Landing Page */
+
+#new_game {
+    background-image: url('../images/wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+    text-align: center;
+    padding: 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+#logo {
+    position: relative;
+    margin-top: 4em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
+
+#play_game {
+    position: relative;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 50px;
+    font-size: 1.5em;
+    -webkit-border-radius: 15;
+    -moz-border-radius: 15;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 6px 9px #4181a3;
+    -moz-box-shadow: 0px 6px 9px #4181a3;
+    box-shadow: 0px 6px 9px #4181a3;
+}
+
+#new_game p {
+    text-align: left;
+    margin-left: 25em;
+}
+
+.button {
+    font-family: 'VT323', monospace;
+    cursor: pointer;
+    color: #222222;
+    background: #f8f8f8;
+    background-image: -webkit-linear-gradient(top, #f8f8f8, #b2b2b2);
+    background-image: -moz-linear-gradient(top, #f8f8f8, #b2b2b2);
+    background-image: -ms-linear-gradient(top, #f8f8f8, #b2b2b2);
+    background-image: -o-linear-gradient(top, #f8f8f8, #b2b2b2);
+    background-image: linear-gradient(to bottom, #f8f8f8, #b2b2b2);
+    text-shadow: 2px 2px #b1b0b0;
+}
+
+.button:hover {
+    background: #b2b2b2;
+}
+
+/* Main Game */
+
+.main {
+    width: 100%;
+    background-image: url('../images/characters.png');
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: bottom left;
+}
+
+.game-container {
+    position: relative;
+    top: 2em;
+    visibility: hidden;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: normal;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 38em;
+    height: 38em;
+    box-sizing: border-box;
+    box-shadow: 24px 24px 16px -2px rgba(14, 34, 14, 0.55);
+}
+
+/* Sidebar */
+
+.side-bar {
+    visibility: hidden;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+    width: 10%;
+    height: 40em;
+    top: 0;
+    right: 0;
+}
+
+.tool-shed {
+    flex-direction: column;
+}
+
+.tool-box {
+    background: white;
+    border: 1px ridge black;
+    margin-bottom: 10px;
+    width: 45px;
+    height: 45px;
+    box-sizing: border-box;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-box-shadow: 8px 4px 8px 0px rgba(14, 34, 14, 0.65);
+    -moz-box-shadow: 8px 4px 8px 0px rgba(14, 34, 14, 0.65);
+    box-shadow: 8px 4px 8px 0px rgba(14, 34, 14, 0.65);
+}
+
+.tool-box.pickaxe {
+    background-image: url("../images/pickaxe.png");
+}
+
+.tool-box.shovel {
+    background-image: url("../images/shovel.png");
+}
+
+.tool-box.axe {
+    background-image: url("../images/axe.png");
+}
+
+.tool-box.selected, .resource-box.selected {
+    background-color: rosybrown;
+    background-blend-mode: hard-light;
+    border: 2px groove red;
+}
+
+.tool-box:hover:not(.selected), .resource-box:hover:not(.selected) {
+    border: 2px dashed blue;
+    cursor: crosshair;
+}
+
+.resources-container {
+    flex-direction: column;
+}
+
+.resource-box {
+    border: 1px dotted black;
+    box-sizing: border-box;
+    margin-top: 10px;
+    width: 45px;
+    height: 45px;
+    -webkit-box-shadow: 8px 4px 8px 0px rgba(14, 34, 14, 0.65);
+    -moz-box-shadow: 8px 4px 8px 0px rgba(14, 34, 14, 0.65);
+    box-shadow: 8px 4px 8px 0px rgba(14, 34, 14, 0.65);
+}
+
+#reset, #theme {
+    visibility: hidden;
+    padding: 5px 10px;
+    font-size: 15px;
+    -webkit-box-shadow: 8px 4px 8px 0px rgba(14, 34, 14, 0.65);
+    -moz-box-shadow: 8px 4px 8px 0px rgba(14, 34, 14, 0.65);
+    box-shadow: 8px 4px 8px 0px rgba(14, 34, 14, 0.65);
+}
+
+/* Elements */
+
+.block {
+    display: inline-block;
+    width: 5%;
+    height: 5%;
+    box-sizing: border-box;
+}

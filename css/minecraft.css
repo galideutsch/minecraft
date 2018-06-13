@@ -1,0 +1,42 @@
+/* Main Game */
+
+.game-container {
+    background-image: url('../images/sky1.png');
+}
+
+/* Elements */
+
+.ground {
+    background-image: url("../images/ground.jpg");
+    filter: saturate(1.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grass {
+    background-image: url("../images/grass.jpg");
+    filter: saturate(1.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.stone {
+    background-image: url("../images/stone.jpg");
+    filter: saturate(1.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bark {
+    background-image: url("../images/bark.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: saturate(1.5);
+}
+
+.shrubbery {
+    background-image: url("../images/leaves.jpg");
+    filter: saturate(1.75);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,42 @@
+/* Main Game */
+
+.game-container {
+    background-image: url('../images/arctic_bkgd.jpg');
+}
+
+/* Elements */
+
+.ground {
+    background-image: url("../images/tiles/tile000.png");
+    filter: saturate(1.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grass {
+    background-image: url("../images/tiles/tile002.png");
+    filter: saturate(1.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.stone {
+    background-image: url("../images/tiles/tile019.png");
+    filter: saturate(1.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bark {
+    background-image: url("../images/bark.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: saturate(1.5);
+}
+
+.shrubbery {
+    background-image: url("../images/tiles/tile021.png");
+    filter: saturate(1.75);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
